@@ -1,4 +1,6 @@
-## Hi! 👋 I'm Shivang Soni @Shivxng3010
+● Hi! 👋 I'm Shivang Soni @Shivxng3010
+
+
 ● CSE undergrad at UIT RGPV 👨‍💻
 
 
