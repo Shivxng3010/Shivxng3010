@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?lines=WELCOME+!+%F0%9F%91%8B+I+AM+SHIVANG+SONI" />
+  <img src="https://readme-typing-svg.demolab.com?lines=WELCOME+!+%F0%9F%91%8B+I+AM+SHIVANG+SONI;Artificial+Intelligence+Student" />
 </p>
 
 
