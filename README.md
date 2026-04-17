@@ -1,5 +1,7 @@
 <p align="center">
-https://vfx-liquid-metal.vercel.app/share/01JMFNF83EX5DAVWF1TP1469BW?refraction=0.015&edge=0.15&patternBlur=0.005&liquid=0.07&speed=0.3&patternScale=2&background=metal
+  
+<img width="1250" height="1250" alt="image" src="https://github.com/user-attachments/assets/ebd25f9a-fb33-4283-930d-a7a3ba793d38" />
+  
 </p>
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Shivxng3010&label=Profile%20views" alt="Profile views"/>
