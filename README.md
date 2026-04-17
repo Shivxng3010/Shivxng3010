@@ -1,7 +1,6 @@
 <p align="center">
- <img width="1250" height="1250" alt="download" src="https://github.com/user-attachments/assets/b8a8ae3b-6789-478a-b093-8787d815ce86" />
+ <img width="300" height="300" alt="download" src="https://github.com/user-attachments/assets/b8a8ae3b-6789-478a-b093-8787d815ce86" />
 
-" width="300" />
 </p>
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Shivxng3010&label=Profile%20views" alt="Profile views"/>
