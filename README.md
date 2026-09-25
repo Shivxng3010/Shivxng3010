@@ -1,27 +1,41 @@
-<p align="center">
-  
-<img width="502" height="454" alt="Screenshot 2026-04-17 170740" src="https://github.com/user-attachments/assets/39e32a16-ac19-48b0-8702-0d8f800e90c4" />
+<!-- Animated Live Profile Banner (Dual-Phase SMIL SVG) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shivxng3010/Shivxng3010/main/dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shivxng3010/Shivxng3010/main/light.svg" />
+  <img alt="Shivang Soni | Profile" src="https://raw.githubusercontent.com/Shivxng3010/Shivxng3010/main/dark.svg" width="100%" />
+</picture>
 
-  
-</p>
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Shivxng3010&label=Profile%20views" alt="Profile views"/>
-  <img src="https://img.shields.io/github/followers/Shivxng3010?label=Followers&style=social" alt="GitHub followers"/>
-</p>
+<br/>
+<br/>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?lines=WELCOME+!+%F0%9F%91%8B+I+AM+SHIVANG+SONI;Artificial+Intelligence+Student" />
-</p>
+<!-- Self-Hosted Dynamic Stats Cards -->
+<div align="center">
+  <img width="100%" src="https://streak-stats.demolab.com/?user=Shivxng3010&amp;hide_border=true&amp;background=0A101F&amp;stroke=22D3EE&amp;ring=A78BFA&amp;fire=10B981&amp;currStreakLabel=22D3EE&amp;sideLabels=94A3B8&amp;currStreakNum=F8FAFC&amp;sideNums=F8FAFC&amp;dates=64748B&amp;titleColor=22D3EE&amp;card_width=1180" alt="GitHub Streak" />
+  <br/>
+  <img width="49%" src="https://github-readme-stats-mu-bice.vercel.app/api?username=Shivxng3010&amp;show_icons=true&amp;count_private=true&amp;include_all_commits=true&amp;hide_rank=true&amp;hide_border=true&amp;title_color=22D3EE&amp;icon_color=A78BFA&amp;text_color=94A3B8&amp;bg_color=0A101F&amp;card_width=500" alt="GitHub Stats" />
+  <img width="49%" src="https://github-readme-stats-mu-bice.vercel.app/api/top-langs/?username=Shivxng3010&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;title_color=22D3EE&amp;text_color=94A3B8&amp;bg_color=0A101F&amp;card_width=500" alt="Top Languages" />
+</div>
 
+<br/>
 
-# **About me**
+<!-- Dynamic Contribution Snake -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shivxng3010/Shivxng3010/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shivxng3010/Shivxng3010/output/github-snake.svg" />
+    <img alt="Snake Eating Contributions" src="https://raw.githubusercontent.com/Shivxng3010/Shivxng3010/output/github-snake.svg" width="100%" />
+  </picture>
+</div>
 
+<br/>
 
-
-
-
-- I'm currently persuing a BS in Data Science from IIT Madras 
-
-
-
-
+<!-- Interactive Social Badges -->
+<div align="center">
+  <a href="mailto:shivangsoni30@gmail.com">
+    <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&amp;logo=gmail&amp;logoColor=10B981&amp;labelColor=0A101F" alt="Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Shivxng3010">
+    <img src="https://img.shields.io/badge/Portfolio-Coming%20Soon-0A101F?style=for-the-badge&amp;logo=safari&amp;logoColor=22D3EE&amp;labelColor=0A101F" alt="Portfolio" />
+  </a>
+</div>
