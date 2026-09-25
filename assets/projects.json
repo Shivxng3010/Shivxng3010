@@ -1,0 +1,13 @@
+{
+  "_comment": "Featured repos. Stars/forks/language come live from the API; description here overrides repo description.",
+  "projects": [
+    {
+      "repo": "Apex-Coder",
+      "description": "AI coding benchmark and LoRA fine-tuning flywheel for code synthesis models"
+    },
+    {
+      "repo": "Task-bot",
+      "description": "Discord task management and study bot with interactive checklist buttons and SQLite scheduling"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_comment": "Self-rated, 0-100. Edit these and the Charts workflow redraws the radar.",
+  "title": "Skill Radar",
+  "axes": [
+    {"label": "Deep Learning / PyTorch", "value": 85},
+    {"label": "Machine Learning", "value": 80},
+    {"label": "Data Science & Stats", "value": 82},
+    {"label": "Python", "value": 90},
+    {"label": "PostgreSQL", "value": 75},
+    {"label": "Frontend / Web", "value": 78}
+  ]
+}
