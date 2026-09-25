@@ -11,7 +11,7 @@
 
 <!-- DYNAMIC TYPING TAGLINE -->
 <a href="https://github.com/Shivxng3010">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=860&lines=Shivang+Soni+-+Student+%26+Data+Science+Explorer;Pursuing+BS+in+Data+Science+%40+IIT+Madras;AI+%E2%80%A2+Deep+Learning+%E2%80%A2+PyTorch+%E2%80%A2+Web+Dev;Building+%E2%80%A2+Learning+%E2%80%A2+Shipping" alt="typing tagline" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=860&lines=Shivang+Soni+-+Student+%26+Data+Science+Explorer;Pursuing+BS+in+Data+Science+%40+IIT+Madras;AI+%E2%80%A2+Machine+Learning+%E2%80%A2+Deep+Learning+%E2%80%A2+Web+Dev;Building+%E2%80%A2+Learning+%E2%80%A2+Shipping" alt="typing tagline" />
 </a>
 
 <br/>
