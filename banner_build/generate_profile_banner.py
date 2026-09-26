@@ -17,7 +17,7 @@ def fmt(num):
 def run_pipeline():
     print("=== Phase 1 Banner Generator Starting ===")
     
-    photo_path = r"D:\Downloads\image0.jpg"
+    photo_path = r"D:\Downloads\nccc.jpg"
     if not os.path.exists(photo_path):
         raise FileNotFoundError(f"Source photo not found at {photo_path}")
     
@@ -25,12 +25,11 @@ def run_pipeline():
     w, h = img.size
     print(f"Original photo size: {w}x{h}")
     
-    # 1. Crop head + shoulders, target aspect 300 / 340
-    target_aspect = 300.0 / 340.0
-    crop_h = int(w / target_aspect)
-    top = (h - crop_h) // 2
-    bottom = top + crop_h
-    cropped = img.crop((0, top, w, bottom))
+    # 1. Clean crop of portrait photo within borders, aspect 300 / 340
+    # Left border ends at 10, right border starts at 638 (width 628)
+    # Top border ends at 25. Required height: 628 / (300 / 340) = 711.7 -> 712
+    # y: 25 to 737
+    cropped = img.crop((10, 25, 638, 737))
     resized = cropped.resize((300, 340), Image.Resampling.LANCZOS)
     print("Cropped to head+shoulders and resized to 300x340 grid")
     
@@ -42,11 +41,11 @@ def run_pipeline():
     gray = gray.filter(ImageFilter.UnsharpMask(radius=3, percent=140))
     
     # 3. Segmentation for Dark Mode:
-    # Background removal using color distance, binary closing, fill holes, keep largest component
+    # Background removal using color distance from white studio background, binary closing, fill holes
     arr_rgb = np.array(resized).astype(np.float32)
-    bg_sample = arr_rgb[:15, :].mean(axis=(0,1))
+    bg_sample = np.array([252.0, 253.0, 254.0])
     dist = np.linalg.norm(arr_rgb - bg_sample, axis=-1)
-    mask_raw = dist > 30.0
+    mask_raw = dist > 25.0
     closed = binary_closing(mask_raw, structure=np.ones((5,5)))
     filled = binary_fill_holes(closed)
     lbl, num = label(filled)
@@ -483,8 +482,8 @@ def run_pipeline():
     
     dark_path = os.path.join(build_dir, "dark.svg")
     light_path = os.path.join(build_dir, "light.svg")
-    repo_dark = r"C:\Users\Lenovo\Shivxng3010\dark.svg"
-    repo_light = r"C:\Users\Lenovo\Shivxng3010\light.svg"
+    repo_dark = r"C:\Users\Lenovo\Shivxng3010\assets\dark.svg"
+    repo_light = r"C:\Users\Lenovo\Shivxng3010\assets\light.svg"
     
     with open(dark_path, "w", encoding="utf-8") as f:
         f.write(dark_svg)
