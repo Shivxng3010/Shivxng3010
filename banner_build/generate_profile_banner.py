@@ -26,9 +26,10 @@ def run_pipeline():
     print(f"Original photo size: {w}x{h}")
     
     # 1. Clean crop of portrait photo within borders, aspect 300 / 340
-    # Printed frame line lives at x 10-16 -> start at 20. Width 618 (20-638).
-    # Required height: 618 / (300 / 340) = 700.5 -> 700. y: 25 to 725.
-    cropped = img.crop((20, 25, 638, 725))
+    # Printed frame lines measured at full res: left x 30-39, right x 614-631.
+    # Crop inside them with margin: x 40-613 (width 573).
+    # Required height: 573 / (300 / 340) = 649.5 -> 650. y: 25 to 675.
+    cropped = img.crop((40, 25, 613, 675))
     resized = cropped.resize((300, 340), Image.Resampling.LANCZOS)
     print("Cropped to head+shoulders and resized to 300x340 grid")
     
@@ -44,7 +45,13 @@ def run_pipeline():
     arr_rgb = np.array(resized).astype(np.float32)
     bg_sample = np.array([252.0, 253.0, 254.0])
     dist = np.linalg.norm(arr_rgb - bg_sample, axis=-1)
-    mask_raw = dist > 14.0
+    # Strict threshold at the extreme edges: kills resampling bleed from the
+    # excluded printed frame lines + backdrop vignette fringe, keeps real subject
+    # (jacket/hair differ from white by >>40). Interior keeps 14 for soft jaw.
+    xx = np.tile(np.arange(300), (340, 1))
+    edge_band = (xx < 10) | (xx > 289)
+    thresh_map = np.where(edge_band, 40.0, 14.0)
+    mask_raw = dist > thresh_map
     closed = binary_closing(mask_raw, structure=np.ones((3,3)))
     filled = binary_fill_holes(closed)
     lbl, num = label(filled)
