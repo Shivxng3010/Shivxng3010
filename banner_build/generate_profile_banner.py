@@ -26,10 +26,9 @@ def run_pipeline():
     print(f"Original photo size: {w}x{h}")
     
     # 1. Clean crop of portrait photo within borders, aspect 300 / 340
-    # Left border ends at 10, right border starts at 638 (width 628)
-    # Top border ends at 25. Required height: 628 / (300 / 340) = 711.7 -> 712
-    # y: 25 to 737
-    cropped = img.crop((10, 25, 638, 737))
+    # Printed frame line lives at x 10-16 -> start at 20. Width 618 (20-638).
+    # Required height: 618 / (300 / 340) = 700.5 -> 700. y: 25 to 725.
+    cropped = img.crop((20, 25, 638, 725))
     resized = cropped.resize((300, 340), Image.Resampling.LANCZOS)
     print("Cropped to head+shoulders and resized to 300x340 grid")
     
@@ -45,8 +44,8 @@ def run_pipeline():
     arr_rgb = np.array(resized).astype(np.float32)
     bg_sample = np.array([252.0, 253.0, 254.0])
     dist = np.linalg.norm(arr_rgb - bg_sample, axis=-1)
-    mask_raw = dist > 25.0
-    closed = binary_closing(mask_raw, structure=np.ones((5,5)))
+    mask_raw = dist > 14.0
+    closed = binary_closing(mask_raw, structure=np.ones((3,3)))
     filled = binary_fill_holes(closed)
     lbl, num = label(filled)
     sizes = [np.sum(lbl == i) for i in range(1, num + 1)]
